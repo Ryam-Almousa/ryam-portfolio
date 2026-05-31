@@ -21,7 +21,7 @@ export default function ProjectForm() {
     tags: ""
   });
 
-  const [originalVideo, setOriginalVideo] = useState(""); // ✅ مهم
+  const [originalVideo, setOriginalVideo] = useState(""); 
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
@@ -42,7 +42,7 @@ export default function ProjectForm() {
             : ""
         });
 
-        setOriginalVideo(project.video || ""); // ✅ نحفظ القديم
+        setOriginalVideo(project.video || ""); 
       }
     }
 
@@ -67,7 +67,7 @@ export default function ProjectForm() {
     const file = e.target.files[0];
     if (!file) return;
 
-    // 🔥 حماية من الحجم الكبير
+    
     if (file.size > 5 * 1024 * 1024) {
       alert("الفيديو كبير جدًا (أقصى شيء 5MB)");
       return;
@@ -93,7 +93,7 @@ export default function ProjectForm() {
         tags: form.tags.split(",").map(t => t.trim())
       };
 
-      // ✅ أهم سطر: لا ترسل الفيديو إذا ما تغير
+      
       if (form.video === originalVideo) {
         delete payload.video;
       }

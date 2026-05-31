@@ -19,9 +19,7 @@ export default function DownloadCVButton({ lang }) {
   return (
     <button
       onClick={handleClick}
-      // التعديلات: 
-      // 1. تقليل px-10 إلى px-6 في الجوال لتفادي ضخامة الزر، وزيادتها في الشاشات الكبيرة md:px-10.
-      // 2. تقليل نص الزر قليلاً في الجوال text-base ليناسب المساحة.
+      
       className="px-6 md:px-10 py-3 md:py-4 text-base md:text-lg font-bold text-white rounded-xl 
                  bg-gradient-to-r from-[#7C3AED] to-[#38BDF8] 
                  hover:brightness-110 transition-all duration-300 shadow-[0_0_30px_rgba(96,165,250,0.5)]

@@ -14,7 +14,7 @@ export default function Footer() {
 
       <div className="relative z-10 max-w-6xl mx-auto px-4 md:px-6 py-4 text-purple-200 text-xs md:text-sm">
 
-        {/* ✅ الجوال */}
+        {/*  الجوال */}
         <div className="flex flex-col items-center gap-1 md:hidden text-center">
 
           <span>
@@ -30,7 +30,7 @@ export default function Footer() {
 
         </div>
 
-        {/* ✅ الديسكتوب */}
+        {/*  الديسكتوب */}
         <div className="hidden md:flex items-center justify-between">
 
           <div className="flex items-center gap-4">

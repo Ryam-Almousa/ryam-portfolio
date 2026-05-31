@@ -41,7 +41,7 @@ export default function Overview({ lang }) {
     }));
   }, []);
 
-  // ✅ تنظيف الهاش لما المستخدم يطلع من قسم المشاريع
+  
   useEffect(() => {
     const handleScroll = () => {
       const projects = document.getElementById("projects");
@@ -100,8 +100,8 @@ export default function Overview({ lang }) {
               hero-glow tracking-widest uppercase break-words w-full
               ${
                 lang === "ar"
-                  ? "font-['Cairo'] font-bold text-[32px] sm:text-[42px] md:text-[80px]"
-                  : "pixel-font text-[24px] sm:text-[32px] md:text-[64px]"
+  ? "font-['Cairo'] font-bold text-[42px] sm:text-[58px] md:text-[80px]"
+  : "pixel-font text-[34px] sm:text-[48px] md:text-[64px]"
               }
             `}
           >
@@ -113,8 +113,8 @@ export default function Overview({ lang }) {
               hero-glow tracking-widest uppercase break-words w-full
               ${
                 lang === "ar"
-                  ? "font-['Cairo'] font-extrabold text-[38px] sm:text-[48px] md:text-[90px]"
-                  : "pixel-font text-[28px] sm:text-[36px] md:text-[72px]"
+  ? "font-['Cairo'] font-extrabold text-[52px] sm:text-[72px] md:text-[90px]"
+  : "pixel-font text-[42px] sm:text-[60px] md:text-[72px]"
               }
             `}
           >

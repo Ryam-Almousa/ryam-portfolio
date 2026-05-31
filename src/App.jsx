@@ -46,7 +46,7 @@ function AppShell({ lang, setLang }) {
   const location = useLocation();
   const isAdminRoute = location.pathname.startsWith("/admin");
 
-  // ✅ الجديد (تحديد صفحة الديتيل)
+
   const isProjectDetail = location.pathname.startsWith("/projects/");
 
   return (
@@ -119,7 +119,7 @@ function AppShell({ lang, setLang }) {
   }
 />
 
-          {/* باقي الصفحات */}
+         
           <Route path="/achievements" element={<Achievements lang={lang} />} />
           <Route path="/contact" element={<Contact lang={lang} />} />
 
@@ -127,7 +127,7 @@ function AppShell({ lang, setLang }) {
         </Routes>
       </div>
 
-      {/* ✅ نخفيهم في صفحة الديتيل فقط */}
+     
       {!isAdminRoute && !isProjectDetail && <Footer />}
       {!isAdminRoute && !isProjectDetail && <ScrollToTopButton />}
 

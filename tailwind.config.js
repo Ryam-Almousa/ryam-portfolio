@@ -5,12 +5,12 @@ export default {
   theme: {
     extend: {
 
-      // ✨ إضافة الخط
+      //  إضافة الخط
       fontFamily: {
         pixel: ['"Press Start 2P"', 'cursive'],
       },
 
-      // ⭐ الشهاب (كما هو)
+    
       keyframes: {
         "shooting-star": {
           "0%": {

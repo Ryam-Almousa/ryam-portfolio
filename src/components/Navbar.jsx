@@ -25,11 +25,11 @@ export default function Navbar({ lang, setLang }) {
       <header className="absolute top-0 left-0 right-0 z-50 bg-transparent">
         <nav className="container h-16 flex items-center justify-between">
 
-        <Link to="/" className="flex items-center">
+        <Link to="/" className="flex items-center pt-5">
   <img
-    src="/ryam_almousa_logo.svg"
+    src="/ryamlogo.PNG"
     alt="Ryam Almousa"
-    className="h-14 md:h-16 w-auto"
+    className="h-16 md:h-20 w-auto object-contain"
   />
 </Link>
 
@@ -57,7 +57,7 @@ export default function Navbar({ lang, setLang }) {
               </li>
             ))}
 
-            {/* زر اللغة (Desktop بدون تغيير) */}
+          
             <li>
               <button
                 onClick={() => setLang(lang === "en" ? "ar" : "en")}
@@ -70,11 +70,11 @@ export default function Navbar({ lang, setLang }) {
 
           {/* Mobile button */}
           <button
-            className="md:hidden p-2 rounded text-white/90 hover:bg-white/10"
-            onClick={() => setOpen(true)}
-          >
-            ☰
-          </button>
+  className="md:hidden p-3 rounded-lg text-white text-3xl hover:bg-white/10"
+  onClick={() => setOpen(true)}
+>
+  ☰
+</button>
         </nav>
       </header>
 
@@ -113,7 +113,7 @@ export default function Navbar({ lang, setLang }) {
             </li>
           ))}
 
-          {/* زر اللغة (Mobile - تم تعديله فقط) */}
+         
           <li className="mt-6">
             <button
               onClick={() => {

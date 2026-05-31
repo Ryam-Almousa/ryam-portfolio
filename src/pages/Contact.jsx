@@ -49,11 +49,11 @@ export default function Contact({ lang }) {
       .then(
         () => {
           localStorage.setItem("lastSentTime", Date.now());
-          alert(lang === "ar" ? "تم إرسال الرسالة بنجاح 🚀" : "Message sent successfully 🚀");
+          alert(lang === "ar" ? "تم إرسال الرسالة بنجاح " : "Message sent successfully ");
           form.current.reset();
         },
         () => {
-          alert(lang === "ar" ? "فشل الإرسال ❌" : "Failed ❌");
+          alert(lang === "ar" ? "فشل الإرسال " : "Failed ");
         }
       );
   };
@@ -86,7 +86,7 @@ export default function Contact({ lang }) {
           />
         ))}
 
-        {/* 🌠 Shooting Stars */}
+        {/*  Shooting Stars */}
 
 <div
   className="shooting-star absolute"

@@ -108,16 +108,16 @@ export default function Achievements({ lang }) {
 
             <h1 className={`hero-glow tracking-widest uppercase text-white leading-tight ${
               lang === "ar"
-                ? "font-['Cairo'] font-bold text-[32px] sm:text-[42px] md:text-[72px]"
-                : "pixel-font text-[24px] sm:text-[32px] md:text-[64px]"
+  ? "font-['Cairo'] font-bold text-[42px] sm:text-[56px] md:text-[72px]"
+  : "pixel-font text-[34px] sm:text-[48px] md:text-[64px]"
             }`}>
               {text1}
             </h1>
 
             <h1 className={`hero-glow tracking-widest uppercase text-white leading-tight ${
               lang === "ar"
-                ? "font-['Cairo'] font-extrabold text-[38px] sm:text-[48px] md:text-[86px] -mt-2"
-                : "pixel-font text-[28px] sm:text-[36px] md:text-[64px]"
+  ? "font-['Cairo'] font-extrabold text-[58px] sm:text-[78px] md:text-[86px] -mt-2"
+  : "pixel-font text-[46px] sm:text-[64px] md:text-[64px]"
             }`}>
               {text2}
             </h1>

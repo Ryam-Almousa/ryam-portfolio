@@ -7,12 +7,12 @@ export default function CopyEmailToast({ email }) {
   const [copied, setCopied] = useState(false);
 
   async function copyWithFallback(text) {
-    // لو https أو localhost ومعه Clipboard API
+   
     if (navigator.clipboard && window.isSecureContext) {
       await navigator.clipboard.writeText(text);
       return;
     }
-    // فallback للمتصفحات القديمة / سياق غير آمن
+    
     const ta = document.createElement("textarea");
     ta.value = text;
     ta.style.position = "fixed";
@@ -20,7 +20,7 @@ export default function CopyEmailToast({ email }) {
     document.body.appendChild(ta);
     ta.focus();
     ta.select();
-    document.execCommand("copy"); // قديمة لكنها تعمل fallback
+    document.execCommand("copy"); 
     document.body.removeChild(ta);
   }
 
@@ -29,7 +29,7 @@ export default function CopyEmailToast({ email }) {
       await copyWithFallback(email);
       setCopied(true);
       setOpen(true);
-      // نقفل التوست بدل ما نعيد copied إلى false
+     
       setTimeout(() => setOpen(false), 1500);
     } catch {
       setCopied(false);

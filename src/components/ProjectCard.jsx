@@ -31,12 +31,12 @@ export default function ProjectCard({ project, lang }) {
         {/* المحتوى */}
         <div className="bg-[#f3f4f9] text-slate-900 p-3 md:p-6 pt-10 md:pt-4 pb-6 md:pb-16 relative rounded-b-2xl md:rounded-b-3xl flex-1">
 
-          {/* الأزرار (ثابتة يمين + غير متأثرة باللغة) */}
+         
           <div
             className="absolute top-3 right-3 flex items-center gap-2"
             style={{ direction: "ltr" }}
           >
-            {/* زر More (يظهر فقط في md) */}
+            
             <div className="flex w-10 h-10 md:w-12 md:h-12 items-center justify-center rounded-full bg-[#1b2a55] text-white text-[10px] md:text-xs font-semibold opacity-0 md:opacity-100">
               {isAr ? "المزيد" : "More"}
             </div>

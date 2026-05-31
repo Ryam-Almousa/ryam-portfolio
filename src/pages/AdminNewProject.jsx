@@ -59,7 +59,7 @@ export default function AdminDashboard() {
 
   const currentData = tab === "projects" ? projects : skills;
 
-  // دالة مساعدة لعرض النص سواء كان Object أو String
+
   const getDisplayText = (field) => {
     if (typeof field === "object" && field !== null) {
       return field.en || field.ar || "No Title";
@@ -132,7 +132,7 @@ export default function AdminDashboard() {
               <tbody className="divide-y divide-white/5">
                 {currentData.map((item) => (
                   <tr key={item.id} className="hover:bg-white/[0.02] transition">
-                    {/* التعديل هنا: استخدام دالة المساعدة لعرض العنوان */}
+                    
                     <td className="p-5 font-medium">
                       {getDisplayText(item.title)}
                     </td>
